@@ -1,4 +1,4 @@
-/* Global Styles */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,64 +6,85 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
 
 /* Hero Section */
 .hero-restaurant {
-    background-color: #FF6F61;  /* Warm color to reflect African cuisine's vibrancy */
-    color: white;
+    position: relative;
+    background-image: url('../images/rice_sticks.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 6rem 0;
-    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
-    background-blend-mode: overlay;
+    color: white;
+    padding: 0 20px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.hero-content {
+    max-width: 800px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 .hero-title {
     font-size: 3.5rem;
-    font-weight: bold;
-    letter-spacing: 2px;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bold;
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    font-style: italic;
 }
 
 .btn-hero {
-    padding: 1rem 2rem;
-    background-color: #f4a261;
+    padding: 1rem 3rem;
+    background-color: #ff6f61;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-hero:hover {
     background-color: #e76f51;
+    transform: translateY(-5px);
 }
 
 /* Featured Dishes Section */
 .featured-dishes {
-    background-color: #f9f9f9;
-    padding: 4rem 0;
+    background-color: #ffffff;
+    padding: 6rem 2rem;
     text-align: center;
+    animation: fadeInUp 1.5s ease-out;
 }
 
 .featured-title {
     font-size: 2.5rem;
     color: #FF6F61;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 .featured-subtitle {
     font-size: 1.2rem;
+    color: #666;
     margin-bottom: 2rem;
 }
 
@@ -75,94 +96,102 @@ body {
 }
 
 .featured-card {
-    background-color: white;
+    background-color: #f9f9f9;
     border-radius: 10px;
     overflow: hidden;
-    width: 250px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.featured-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
 .featured-card img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease;
 }
 
-.featured-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+.featured-card:hover img {
+    transform: scale(1.1);
 }
 
 .featured-dish-name {
-    text-align: center;
     padding: 1rem;
-    font-weight: bold;
     background-color: #FF6F61;
     color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 /* About Us Section */
 .about-restaurant {
-    background-color: #f2f2f2;
-    padding: 4rem 0;
+    background-color: #f0f0f0;
+    padding: 6rem 2rem;
     text-align: center;
+    animation: fadeInUp 2s ease-out;
 }
 
 .about-title {
     font-size: 2.5rem;
     color: #FF6F61;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 .about-description {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #555;
-    max-width: 900px;
-    margin: 0 auto;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 2rem;
 }
 
 .btn-about {
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     background-color: #f4a261;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-about:hover {
     background-color: #e76f51;
+    transform: translateY(-5px);
 }
 
-/* Footer Section */
+/* Footer */
 .footer-restaurant {
     background-color: #222;
     color: white;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
 .footer-restaurant p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
-/* WOW Animations */
+/* Animations */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(20px);
     }
     100% {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.hero-restaurant, .featured-dishes, .about-restaurant {
-    animation: fadeInUp 1s ease-out;
 }
 
 /* Responsive Design */

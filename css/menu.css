@@ -1,0 +1,223 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.menu-hero {
+    position: relative;
+    background-image: url('../images/rice_fish.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.menu-hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.menu-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.btn-view-menu {
+    padding: 1rem 3rem;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-view-menu:hover {
+    background-color: #e76f51;
+    transform: translateY(-5px);
+}
+
+/* Menu Categories */
+.menu-categories {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.category-title {
+    font-size: 2.5rem;
+    color: #ff6f61;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.categories-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.category-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover img {
+    transform: scale(1.05);
+}
+
+.category-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.category-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Menu Items */
+.menu-section {
+    position: relative;
+    background-image: url('../images/pexels-ej-agumbay-698816-6612892.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+
+}
+
+.menu-section-title {
+    font-size: 2.5rem;
+    color: #ff6f61;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    
+    background-color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.menu-item-title {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item-description {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .categories-list {
+        flex-direction: column;
+    }
+
+    .category-card {
+        width: 100%;
+    }
+
+    .menu-items {
+        flex-direction: column;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+}

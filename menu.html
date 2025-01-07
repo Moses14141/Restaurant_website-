@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant - Menu</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,15 +24,91 @@
             </nav>
         </div>
     </header>
+<!-- Menu Section -->
+<main class="menu-main">
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <h1 class="menu-title">Our Delicious Menu</h1>
+            <p class="menu-subtitle">Explore a selection of our finest African dishes, crafted to perfection for your enjoyment.</p>
+        </div>
+    </section>
 
-    <!-- Main Content -->
-    <main>
-        <section class="menu-section">
-            <h2>Our Delicious Menu</h2>
-            <p>Explore our wide range of mouthwatering dishes!</p>
-            <!-- Add your menu items here -->
-        </section>
-    </main>
+    <!-- Categories Section -->
+    <section class="menu-categories">
+        <div class="container">
+            <h2 class="category-title">Menu Categories</h2>
+            <div class="categories-list">
+                <div class="category-card">
+                    <img src="images/sambusa.jpg" alt="Starters">
+                    <h3>Starters</h3>
+                    <p class="category-description">Begin your meal with a burst of flavor from our signature starters.</p>
+                    <a href="#starters" class="btn-view-menu">View Starters</a>
+                </div>
+                <div class="category-card">
+                    <img src="images/rice_fish.jpg" alt="Main Dishes">
+                    <h3>Main Dishes</h3>
+                    <p class="category-description">Savor hearty dishes that are the heart of African cuisine.</p>
+                    <a href="#mains" class="btn-view-menu">View Mains</a>
+                </div>
+                <div class="category-card">
+                    <img src="images/choco.jpg" alt="Desserts">
+                    <h3>Desserts</h3>
+                    <p class="category-description">End your meal with our delectable desserts, full of sweet indulgence.</p>
+                    <a href="#desserts" class="btn-view-menu">View Desserts</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Starters Section -->
+    <section id="starters" class="menu-section">
+        <div class="container">
+            <h2 class="menu-section-title">Starters</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/samosa.jpg" alt="Samosa">
+                    <h3 class="menu-item-title">Samosa</h3>
+                    <p class="menu-item-description">Crispy and golden pockets filled with spiced meat or vegetables.</p>
+                    <span class="price">$5.99</span>
+                </div>
+                <!-- Add more starter items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Dishes Section -->
+    <section id="mains" class="menu-section">
+        <div class="container">
+            <h2 class="menu-section-title">Main Dishes</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/rice.jpg" alt="Jollof Rice">
+                    <h3 class="menu-item-title">Jollof Rice</h3>
+                    <p class="menu-item-description">A classic West African dish with a rich and spicy tomato-based flavor.</p>
+                    <span class="price">$12.99</span>
+                </div>
+                <!-- Add more main dishes items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts Section -->
+    <section id="desserts" class="menu-section">
+        <div class="container">
+            <h2 class="menu-section-title">Desserts</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/choco.jpg" alt="Chocolate Cake">
+                    <h3 class="menu-item-title">Chocolate Cake</h3>
+                    <p class="menu-item-description">A rich, moist cake topped with decadent chocolate ganache.</p>
+                    <span class="price">$6.99</span>
+                </div>
+                <!-- Add more dessert items as needed -->
+            </div>
+        </div>
+    </section>
+</main>
+
 
     <!-- Footer -->
     <footer>
