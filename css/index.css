@@ -200,7 +200,77 @@ body {
         font-size: 2.5rem;
     }
 
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .btn-hero {
+        padding: 0.8rem 2rem;
+    }
+
+    .featured-title {
+        font-size: 2rem;
+    }
+
+    .featured-subtitle {
+        font-size: 1rem;
+    }
+
     .featured-gallery {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .featured-card {
+        width: 90%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Add space between cards */
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .btn-about {
+        padding: 0.8rem 2rem;
+    }
+}
+
+
+
+
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    nav {
+        display: none; /* Hide the nav by default on mobile */
+        position: absolute;
+        background: white; /* Or any background color */
+        top: 60px; /* Adjust based on your header height */
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    nav.active {
+        display: block; /* Show the nav when active */
+    }
+    .menu {
+        flex-direction: column; /* Stack menu items vertically */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+    }
+    .menu li {
+        border-bottom: 1px solid #ccc; /* Optional: Add a separator */
     }
 }
